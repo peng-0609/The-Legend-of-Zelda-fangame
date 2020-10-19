@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="e:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\bin\Windows\x86\Debug\Sprint2.exe">
+   <Modules>
+    <Module Name="sprint2.exe">
+     <Messages>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'Sprint2.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Sprint2">
+       <Types>
+        <Type Name="AllCollisionHandler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CheckLinkProjectileCollision(Microsoft.Xna.Framework.Rectangle)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="direction" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Collisions" File="AllCollisionHandler.cs" Line="124">'AllCollisionHandler.CheckLinkProjectileCollision(Rectangle)' declares a variable, 'direction', of type 'Direction', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckProjectileEnemyCollision()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="direction" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Collisions" File="AllCollisionHandler.cs" Line="165">'AllCollisionHandler.CheckProjectileEnemyCollision()' declares a variable, 'direction', of type 'Direction', which is never used or is only assigned to. Use this variable or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BlockDoorCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'BlockDoorCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="BlockWallCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'BlockWallCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="BombIdleState" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#timer" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'BombIdleState.timer' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Door" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#x" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Door.x' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#y" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Door.y' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EnemyBlockCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'EnemyBlockCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="EnemyDoorCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'EnemyDoorCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="EnemyProjectileCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'EnemyProjectileCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="EnemyWallCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'EnemyWallCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="EnemyWaterCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'EnemyWaterCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Game1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ControllerList" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2" File="Game1.cs" Line="22">Change 'Game1.ControllerList' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2" File="Game1.cs" Line="22">Change 'List&lt;IController&gt;' in 'Game1.ControllerList' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#map" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Game1.map' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#spriteBatch" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">Because field 'Game1.spriteBatch' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GamePausingState" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#OptionIndex" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'GamePausingState.OptionIndex' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#options" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'GamePausingState.options' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#optionsLocations" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'GamePausingState.optionsLocations' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#selector" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'GamePausingState.selector' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GameStateManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Pause()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\GameState" File="GameStateManager.cs" Line="82">The 'this' parameter (or 'Me' in Visual Basic) of 'GameStateManager.Pause()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GameTransitionPausingState" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#spriteFont" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'GameTransitionPausingState.spriteFont' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IBlock" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IBlock.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IDoor" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IDoor.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IEnemy" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IEnemy.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IGameState" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Resume()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Resume" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'IGameState.Resume()' so that it no longer conflicts with the reserved language keyword 'Resume'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IItem" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IItem.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ILevel" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Blocks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Blocks' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IBlock&gt;' in 'ILevel.Blocks' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Characters" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Characters' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;ICharacter&gt;' in 'ILevel.Characters' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Doors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Doors' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IDoor&gt;' in 'ILevel.Doors' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Enemies" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Enemies' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IEnemy&gt;' in 'ILevel.Enemies' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Items" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Items' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IItem&gt;' in 'ILevel.Items' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Projectiles" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Projectiles' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IProjectile&gt;' in 'ILevel.Projectiles' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Stairs" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Stairs' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IStair&gt;' in 'ILevel.Stairs' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Walls" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Walls' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IWall&gt;' in 'ILevel.Walls' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Water" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'ILevel.Water' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IWater&gt;' in 'ILevel.Water' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IPlayer" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IPlayer.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IProjectile" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IProjectile.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IStair" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IStair.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IWall" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IWall.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IWater" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetRectangle()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IWater.GetRectangle()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="KeyboardController" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ReturnToIdle(Sprint2.Game1,Microsoft.Xna.Framework.Input.KeyboardState)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Controller" File="KeyboardController.cs" Line="69">The 'this' parameter (or 'Me' in Visual Basic) of 'KeyboardController.ReturnToIdle(Game1, KeyboardState)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+            <Message Id="game" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Controller" File="KeyboardController.cs" Line="69">'game', a parameter declared in 'KeyboardController.ReturnToIdle(Game1, KeyboardState)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Update(Sprint2.Game1)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="game" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Controller" File="KeyboardController.cs" Line="45">'game', a parameter declared in 'KeyboardController.Update(Game1)', has the same name as an instance field on the type. Change the name of one of these items.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Level" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Blocks" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="16">Change 'Level.Blocks' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="16">Change 'List&lt;IBlock&gt;' in 'Level.Blocks' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Characters" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="20">Change 'Level.Characters' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="20">Change 'List&lt;ICharacter&gt;' in 'Level.Characters' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Doors" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="18">Change 'Level.Doors' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="18">Change 'List&lt;IDoor&gt;' in 'Level.Doors' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#dungeonHUD" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Level.dungeonHUD' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Enemies" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="14">Change 'Level.Enemies' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="14">Change 'List&lt;IEnemy&gt;' in 'Level.Enemies' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Items" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="15">Change 'Level.Items' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="15">Change 'List&lt;IItem&gt;' in 'Level.Items' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Projectiles" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="21">Change 'Level.Projectiles' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="21">Change 'List&lt;IProjectile&gt;' in 'Level.Projectiles' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Stairs" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="22">Change 'Level.Stairs' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="22">Change 'List&lt;IStair&gt;' in 'Level.Stairs' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Walls" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="19">Change 'Level.Walls' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="19">Change 'List&lt;IWall&gt;' in 'Level.Walls' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Water" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="17">Change 'Level.Water' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes" File="Level.cs" Line="17">Change 'List&lt;IWater&gt;' in 'Level.Water' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LevelLoaderFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateItem(Sprint2.ILevel,System.String,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Factories" File="LevelLoaderFactory.cs" Line="128">'LevelLoaderFactory.CreateItem(ILevel, string, int, int)' has a cyclomatic complexity of 35. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadContents(Sprint2.Game1,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Factories" File="LevelLoaderFactory.cs" Line="33">The 'this' parameter (or 'Me' in Visual Basic) of 'LevelLoaderFactory.LoadContents(Game1, int)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Link" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#game" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Link.game' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LinkBlockCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkBlockCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LinkDeadState" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#game" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'LinkDeadState.game' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LinkDoorCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkDoorCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LinkEnemyCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkEnemyCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LinkInventoryProperty" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#link" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'LinkInventoryProperty.link' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PickUpItem(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Property" File="LinkInventoryProperty.cs" Line="41">'LinkInventoryProperty.PickUpItem(string)' has a cyclomatic complexity of 33. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LinkItemCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkItemCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LinkProjectileCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkProjectileCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LinkStairCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkStairCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#UpateLocation(Sprint2.IPlayer,Sprint2.IStair,Sprint2.Direction)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="stair" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Collisions" File="LinkStairCollision.cs" Line="31">Parameter 'stair' of 'LinkStairCollision.UpateLocation(IPlayer, IStair, Direction)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LinkWallCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkWallCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LinkWaterCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'LinkWaterCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MovableBlock" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CollidedWithLink(Sprint2.IPlayer)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Link" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Classes\Blocks" File="MovableBlock.cs" Line="30">Parameter 'Link' of 'MovableBlock.CollidedWithLink(IPlayer)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MusicFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Pause()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Factories" File="MusicFactory.cs" Line="79">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicFactory.Pause()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Resume()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Factories" File="MusicFactory.cs" Line="83">The 'this' parameter (or 'Me' in Visual Basic) of 'MusicFactory.Resume()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ProjectileBlockCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'ProjectileBlockCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ProjectileDoorCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'ProjectileDoorCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ProjectileStairCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'ProjectileStairCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ProjectileWallCollision" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="Breaking">
+           <Issue Name="CSharp2_0" Certainty="90" Level="Error">Because type 'ProjectileWallCollision' contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Room" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#position" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Room.position' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TextSprite" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Update()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Sprites" File="TextSprite.cs" Line="21">The 'this' parameter (or 'Me' in Visual Basic) of 'TextSprite.Update()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Util" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Instance" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#set_Instance(Sprint2.Util)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Util" File="Util.cs" Line="13">'Util.Instance.set(Util)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Int_1" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Int_1()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Util" File="Util.cs" Line="27">'Util.Int_1.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Int_2" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Int_2()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Util" File="Util.cs" Line="25">'Util.Int_2.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Int_3" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Int_3()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\Administrator\Source\Repos\Sprint2\Sprint2\Util" File="Util.cs" Line="23">'Util.Int_3.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WorldState" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#spriteFont" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2019-11-15 00:09:32Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'WorldState.spriteFont' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502">
+   <Name>Avoid excessive complexity</Name>
+   <Description>Method implementations that are exceedingly complex increase the challenge of understanding and maintaining code.</Description>
+   <Resolution Name="Default">{0} has a cyclomatic complexity of {1}. Rewrite or refactor the method to reduce complexity to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182212.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>Do not declare visible instance fields</Name>
+   <Description>Instance fields that are visible outside of the type that declares them, limit your ability to change the implementation details for those data items. Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the implementation details of the underlying data.</Description>
+   <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182141.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716">
+   <Name>Identifiers should not match keywords</Name>
+   <Description>Identifiers which conflict with reserved language keywords should be avoided. Using a reserved keyword as an identifier makes it harder for consumers in other languages to use your API.</Description>
+   <Resolution Name="Member">Rename virtual/interface member {0} so that it no longer conflicts with the reserved language keyword '{1}'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182248.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+   <Name>Remove unused locals</Name>
+   <Description>Remove locals that are not used or are only assigned to in method implementations.</Description>
+   <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182278.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053">
+   <Name>Static holder types should not have constructors</Name>
+   <Description>Instances of types that define only static members do not need to be created. Many compilers will automatically add a public default constructor if no constructor is specified. To prevent this, adding an empty private constructor may be required.</Description>
+   <Resolution Name="CSharp2_0">Because type {0} contains only 'static' members, mark it as 'static' to prevent the compiler from adding a default public constructor.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182169.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Variable names should not match field names</Name>
+   <Description>Instance field and variable names should not be identical within the same scope.</Description>
+   <Resolution Name="Parameter">{0}, a parameter declared in {1}, has the same name as an instance field on the type. Change the name of one of these items.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

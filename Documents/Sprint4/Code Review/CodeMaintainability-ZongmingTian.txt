@@ -1,0 +1,11 @@
+﻿Author of the code review: Zongming Tian
+Date of the code review: 20191110
+Sprint number: Sprint 4
+Name of the .cs file being reviewed:The DugeonHUD.cs 
+Author of the .cs file being reviewed:Cong Liu
+Specific comments on code quality: In most functions of the Dugeon file, the code looks cohesive and little couple. But some variables or properties in this file can be put into other files in this sprint
+, like 'firstpicked', this is not really helpful for us to knwon what it really mean. And for the draw function, I think most of them can be written in the level class.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+I think write down the draw function into other files is available, and it really does work for leveling up the maintainability. Since I am writting the gamestate class in this sprint, I need to just use draw 
+function for some classes, but in the world state, I need to draw all the things in it(including HUD and level draw functions), so just put HUD draw function into the level class has the same results but it 
+can improve the maintainability.

@@ -1,0 +1,9 @@
+﻿Author of the code review: Cong Liu
+Date of the code review: 09/27
+Sprint number: 2
+Name of the .cs file being reviewed: Game1.cs
+Author of the .cs file being reviewed: Weiyi Jiang & Zongming Tian
+Number of minutes taken to complete the review: 15 minutes
+Specific comments on what is readable and what is not: Overall, the Game1.cs class was written well. The methods and fileds all have meaningful names.
+But the use of public field is not a good practice. And I think there are too many repeated variables that can be refined. Also, in the Reset methods, the lines 
+of code are too long and repeated which can be improved in the future.

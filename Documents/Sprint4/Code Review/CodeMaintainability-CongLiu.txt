@@ -1,0 +1,11 @@
+﻿Author of the code review: Cong Liu
+Date of the code review: 11/11
+Sprint number: 4
+Name of the .cs file being reviewed: DungeonHUD.cs and LinkInventoryProperty.cs
+Author of the .cs file being reviewed: Weiyi Jiang, Kun Peng
+Specific comments on code quality: The code in this class is easy to understand becasue I can see how to handle each item in the HUD in various situations. It is good
+to have a Link Inventory class to hold all the items needed so that the HUD class don;t need to instantiate each item again. But I feel like that there are some code 
+reuse in the HUD class. For example, there are many location vectors that have same x and y coordinates. And there are many cases where a sprite is called mutiple times
+in different places.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:
+I would recommend to make every location vector that is used by many sprites a private field.

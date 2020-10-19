@@ -1,0 +1,12 @@
+﻿Author of the code review: Zongming Tian
+Date of the code review: 20191201
+Sprint number: Sprint 5
+Name of the .cs file being reviewed:Collision.cs and UnlimitedState.cs
+Author of the .cs file being reviewed:Cong Liu,Xiaochen Feng
+Specific comments on code quality: For the unlimitedstate file, since most functions are copying from worldstate.cs, so I feel it didn't have much trouble on maintainability. The gamestate is a very simple and
+easy part; If some problems happen in the game state, it is very easy to modify or correct the code. But for collisionhandlers files, many thing has been changed and merged into such simple class. You should 
+check the collision and update the state of other classes, or even you have to make those objects moving. To be honest, if something wrong about the collision, it will take several hours to find the error and
+try to correct it.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+I think move several functions from collision handler into other classes are definitely available, so if you find something wrong with collision. You can check differnt collision classes to find the problem 
+based on what your problem is.

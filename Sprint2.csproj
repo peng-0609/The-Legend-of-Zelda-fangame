@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8987E61D-5BC4-4D87-B3D6-B2249EA57F0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sprint2</RootNamespace>
+    <AssemblyName>Sprint2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Blocks\MovableBlock.cs" />
+    <Compile Include="Classes\Blocks\Stair.cs" />
+    <Compile Include="Classes\Blocks\UnmovableBlock.cs" />
+    <Compile Include="Classes\Blocks\Water.cs" />
+    <Compile Include="Classes\Camera.cs" />
+    <Compile Include="Classes\Characters\Oldman.cs" />
+    <Compile Include="Classes\DetailedMap.cs" />
+    <Compile Include="Classes\Door\Door.cs" />
+    <Compile Include="Classes\Enemies\Aquamentus.cs" />
+    <Compile Include="Classes\Enemies\Gel.cs" />
+    <Compile Include="Classes\Enemies\Goriya.cs" />
+    <Compile Include="Classes\Enemies\Keese.cs" />
+    <Compile Include="Classes\Enemies\Stalfos.cs" />
+    <Compile Include="Classes\Enemies\Trap.cs" />
+    <Compile Include="Classes\Enemies\Wallmaster.cs" />
+    <Compile Include="Classes\Items\BlueRupy.cs" />
+    <Compile Include="Classes\Items\BombItem.cs" />
+    <Compile Include="Classes\Items\BoomerangItem.cs" />
+    <Compile Include="Classes\Items\Bow.cs" />
+    <Compile Include="Classes\Items\Clock.cs" />
+    <Compile Include="Classes\Items\Compass.cs" />
+    <Compile Include="Classes\Items\Fairy.cs" />
+    <Compile Include="Classes\Items\Heart.cs" />
+    <Compile Include="Classes\Items\HeartContainer.cs" />
+    <Compile Include="Classes\Items\Key.cs" />
+    <Compile Include="Classes\Items\Map.cs" />
+    <Compile Include="Classes\Items\Sword.cs" />
+    <Compile Include="Classes\Items\Triforce.cs" />
+    <Compile Include="Classes\Items\YellowRupy.cs" />
+    <Compile Include="Classes\Level.cs" />
+    <Compile Include="Classes\Player\Link.cs" />
+    <Compile Include="Classes\Projectiles\Bomb.cs" />
+    <Compile Include="Classes\Projectiles\Boomerang.cs" />
+    <Compile Include="Classes\Projectiles\AttackSword.cs" />
+    <Compile Include="Classes\Projectiles\FireBall.cs" />
+    <Compile Include="Classes\Projectiles\ShootedArrow.cs" />
+    <Compile Include="Classes\Room\Room.cs" />
+    <Compile Include="Collisions\AllCollisionHandler.cs" />
+    <Compile Include="Collisions\BlockDoorCollision.cs" />
+    <Compile Include="Collisions\BlockWallCollision.cs" />
+    <Compile Include="Collisions\EnemyBlockCollision.cs" />
+    <Compile Include="Collisions\EnemyDoorCollision.cs" />
+    <Compile Include="Collisions\EnemyProjectileCollision.cs" />
+    <Compile Include="Collisions\EnemyWallCollision.cs" />
+    <Compile Include="Collisions\EnemyWaterCollision.cs" />
+    <Compile Include="Collisions\LinkBlockCollision.cs" />
+    <Compile Include="Collisions\LinkDoorCollision.cs" />
+    <Compile Include="Collisions\LinkEnemyCollision.cs" />
+    <Compile Include="Collisions\LinkItemCollision.cs" />
+    <Compile Include="Collisions\LinkProjectileCollision.cs" />
+    <Compile Include="Collisions\LinkStairCollision.cs" />
+    <Compile Include="Collisions\LinkWallCollision.cs" />
+    <Compile Include="Collisions\LinkWaterCollision.cs" />
+    <Compile Include="Collisions\ProjectileBlockCollision.cs" />
+    <Compile Include="Collisions\ProjectileDoorCollision.cs" />
+    <Compile Include="Collisions\ProjectileStairCollision.cs" />
+    <Compile Include="Collisions\ProjectileWallCollision.cs" />
+    <Compile Include="Commands\ActionCommand.cs" />
+    <Compile Include="Commands\ItemHUDCommand.cs" />
+    <Compile Include="Commands\ReturnToIdleCommand.cs" />
+    <Compile Include="Commands\UseMapCommand.cs" />
+    <Compile Include="Commands\AttackCommand.cs" />
+    <Compile Include="Commands\MoveDownCommand.cs" />
+    <Compile Include="Commands\MoveLeftCommand.cs" />
+    <Compile Include="Commands\MoveRightCommand.cs" />
+    <Compile Include="Commands\MoveUpCommand.cs" />
+    <Compile Include="Commands\ResumeCommand.cs" />
+    <Compile Include="Commands\UseItemCommand.cs" />
+    <Compile Include="Controller\KeyboardController.cs" />
+    <Compile Include="Decorator\DamagedLink.cs" />
+    <Compile Include="Factories\HUDSpriteFactory.cs" />
+    <Compile Include="Factories\MenuSpriteFactory.cs" />
+    <Compile Include="Factories\MusicFactory.cs" />
+    <Compile Include="Factories\SoundEffectFactory.cs" />
+    <Compile Include="Factories\RoomSpriteFactory.cs" />
+    <Compile Include="Factories\CharacterSpriteFactory.cs" />
+    <Compile Include="Factories\EnemySpriteFactory.cs" />
+    <Compile Include="Factories\ArtifactSpriteFactory.cs" />
+    <Compile Include="Factories\ItemSpriteFactory.cs" />
+    <Compile Include="Factories\LevelLoaderFactory.cs" />
+    <Compile Include="Factories\LinkSpriteFactory.cs" />
+    <Compile Include="Factories\ProjectileSpriteFactory.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="GameState\GameOverState.cs" />
+    <Compile Include="GameState\GamePausingState.cs" />
+    <Compile Include="GameState\GameTransitionPausingState.cs" />
+    <Compile Include="GameState\ItemSelectionState.cs" />
+    <Compile Include="GameState\UnlimitedState.cs" />
+    <Compile Include="GameState\WorldState.cs" />
+    <Compile Include="GameState\GameStateManager.cs" />
+    <Compile Include="GameState\GameWinState.cs" />
+    <Compile Include="GameState\MenuState.cs" />
+    <Compile Include="HUD\DungeonHUD.cs" />
+    <Compile Include="Interfaces\IBlock.cs" />
+    <Compile Include="Interfaces\IBlockState.cs" />
+    <Compile Include="Interfaces\IHUD.cs" />
+    <Compile Include="Interfaces\ICharacter.cs" />
+    <Compile Include="Interfaces\IDoor.cs" />
+    <Compile Include="Interfaces\IDoorState.cs" />
+    <Compile Include="Interfaces\IEnemyState.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\IEnemy.cs" />
+    <Compile Include="Interfaces\IGameState.cs" />
+    <Compile Include="Interfaces\IItem.cs" />
+    <Compile Include="Interfaces\ILevel.cs" />
+    <Compile Include="Interfaces\ILinkState.cs" />
+    <Compile Include="Interfaces\IPlayer.cs" />
+    <Compile Include="Interfaces\IProjectile.cs" />
+    <Compile Include="Interfaces\IProjectileState.cs" />
+    <Compile Include="Interfaces\IRoom.cs" />
+    <Compile Include="Interfaces\ISprite.cs" />
+    <Compile Include="Interfaces\IStair.cs" />
+    <Compile Include="Interfaces\IWall.cs" />
+    <Compile Include="Interfaces\IWater.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property\EnemyPhysicalProperty.cs" />
+    <Compile Include="Property\LinkInventoryProperty.cs" />
+    <Compile Include="Property\LinkPhysicalProperty.cs" />
+    <Compile Include="Property\ProjectilePhysicalProperty.cs" />
+    <Compile Include="Sprites\BackgroundSprite.cs" />
+    <Compile Include="Sprites\AnimatedNonLoopSprite.cs" />
+    <Compile Include="Sprites\AnimatedSprite.cs" />
+    <Compile Include="Sprites\HUDSprite.cs" />
+    <Compile Include="Sprites\TextSprite.cs" />
+    <Compile Include="Sprites\NonAnimatedSprite.cs" />
+    <Compile Include="States\Aquamentus\DeadAquamentusState.cs" />
+    <Compile Include="States\Aquamentus\LeftMovingAquamentusState.cs" />
+    <Compile Include="States\Aquamentus\RightMovingAquamentusState.cs" />
+    <Compile Include="States\Block\BlockIdleState.cs" />
+    <Compile Include="States\Block\BlockMoveState.cs" />
+    <Compile Include="States\CameraState.cs" />
+    <Compile Include="States\Door\DoorDownClosedState.cs" />
+    <Compile Include="States\Door\DoorDownLockedState.cs" />
+    <Compile Include="States\Door\DoorDownOpenState.cs" />
+    <Compile Include="States\Door\DoorLeftClosedState.cs" />
+    <Compile Include="States\Door\DoorLeftLockedState.cs" />
+    <Compile Include="States\Door\DoorLeftOpenState.cs" />
+    <Compile Include="States\Door\DoorRightClosedState.cs" />
+    <Compile Include="States\Door\DoorRightLockedState.cs" />
+    <Compile Include="States\Door\DoorRightOpenState.cs" />
+    <Compile Include="States\Door\DoorUpClosedState.cs" />
+    <Compile Include="States\Door\DoorUpLockedState.cs" />
+    <Compile Include="States\Door\DoorUpOpenState.cs" />
+    <Compile Include="States\Gel\DeadGelState.cs" />
+    <Compile Include="States\Gel\DownMovingGelState.cs" />
+    <Compile Include="States\Gel\LeftMovingGelState.cs" />
+    <Compile Include="States\Gel\RightMovingGelState.cs" />
+    <Compile Include="States\Gel\UpMovingGelState.cs" />
+    <Compile Include="States\Goriya\DeadGoriyaState.cs" />
+    <Compile Include="States\Goriya\DownMovingGoriyaState.cs" />
+    <Compile Include="States\Goriya\LeftMovingGoriyaState.cs" />
+    <Compile Include="States\Goriya\RightMovingGoriyaState.cs" />
+    <Compile Include="States\Goriya\UpMovingGoriyaState.cs" />
+    <Compile Include="States\Keese\DeadKeeseState.cs" />
+    <Compile Include="States\Keese\DownMovingKeeseState.cs" />
+    <Compile Include="States\Keese\LeftMovingKeeseState.cs" />
+    <Compile Include="States\Keese\RightMovingKeeseState.cs" />
+    <Compile Include="States\Keese\UpMovingKeeseState.cs" />
+    <Compile Include="States\LinkStates\LinkDeadState.cs" />
+    <Compile Include="States\LinkStates\LinkDownStates\LinkDownAttackState.cs" />
+    <Compile Include="States\LinkStates\LinkDownStates\LinkDownIdleState.cs" />
+    <Compile Include="States\LinkStates\LinkDownStates\LinkDownRunState.cs" />
+    <Compile Include="States\LinkStates\LinkLeftStates\LinkLeftAttackState.cs" />
+    <Compile Include="States\LinkStates\LinkLeftStates\LinkLeftIdleState.cs" />
+    <Compile Include="States\LinkStates\LinkLeftStates\LinkLeftRunState.cs" />
+    <Compile Include="States\LinkStates\LinkPickUpState.cs" />
+    <Compile Include="States\LinkStates\LinkRightStates\LinkRightAttackState.cs" />
+    <Compile Include="States\LinkStates\LinkRightStates\LinkRightIdleState.cs" />
+    <Compile Include="States\LinkStates\LinkRightStates\LinkRightRunState.cs" />
+    <Compile Include="States\LinkStates\LinkUpStates\LinkUpAttackState.cs" />
+    <Compile Include="States\LinkStates\LinkUpStates\LinkUpIdleState.cs" />
+    <Compile Include="States\LinkStates\LinkUpStates\LinkUpRunState.cs" />
+    <Compile Include="States\Projectile\BombStates\BombExplodedState.cs" />
+    <Compile Include="States\Projectile\BombStates\BombIdleState.cs" />
+    <Compile Include="States\Projectile\BoomerangStates\BoomerangIdleState.cs" />
+    <Compile Include="States\Projectile\BoomerangStates\BoomerangUsedState.cs" />
+    <Compile Include="States\Projectile\ShootedArrow\ShootedArrowDownState.cs" />
+    <Compile Include="States\Projectile\ShootedArrow\ShootedArrowLeftState.cs" />
+    <Compile Include="States\Projectile\ShootedArrow\ShootedArrowRightState.cs" />
+    <Compile Include="States\Projectile\ShootedArrow\ShootedArrowUpState.cs" />
+    <Compile Include="States\Projectile\Sword\SwordAttackState.cs" />
+    <Compile Include="States\Stalfos\DeadStalfosState.cs" />
+    <Compile Include="States\Stalfos\DownMovingStalfosState.cs" />
+    <Compile Include="States\Stalfos\LeftMovingStalfosState.cs" />
+    <Compile Include="States\Stalfos\RightMovingStalfosState.cs" />
+    <Compile Include="States\Stalfos\UpMovingStalfosState.cs" />
+    <Compile Include="States\Trap\DeadTrapState.cs" />
+    <Compile Include="States\Trap\DownMovingTrapState.cs" />
+    <Compile Include="States\Trap\LeftMovingTrapState.cs" />
+    <Compile Include="States\Trap\RightMovingTrapState.cs" />
+    <Compile Include="States\Trap\UpMovingTrapState.cs" />
+    <Compile Include="States\Wallmaster\DeadWallmasterState.cs" />
+    <Compile Include="States\Wallmaster\DownMovingWallmasterState.cs" />
+    <Compile Include="States\Wallmaster\LeftMovingWallmasterState.cs" />
+    <Compile Include="States\Wallmaster\RightMovingWallmasterState.cs" />
+    <Compile Include="States\Wallmaster\UpMovingWallmasterState.cs" />
+    <Compile Include="Util\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SharpDX.MediaFoundation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\Windows\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Windows\x86\Debug\Content\Level1.xml" />
+    <Content Include="bin\Windows\x86\Debug\Content\Music\DungeonTheme.wma" />
+    <Content Include="bin\Windows\x86\Debug\Content\Music\EndingTheme.wma" />
+    <Content Include="bin\Windows\x86\Debug\Content\Music\MenuTheme.wma" />
+    <Content Include="bin\Windows\x86\Debug\Content\Music\OverworldTheme.wma" />
+    <Content Include="bin\Windows\x86\Debug\Content\Music\TitleTheme.wma" />
+    <Content Include="bin\Windows\x86\Debug\Content\Unlimited.xml" />
+    <Content Include="bin\Windows\x86\Debug\MonoGame.Framework.dll" />
+    <Content Include="bin\Windows\x86\Debug\MonoGame.Framework.xml" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.Direct2D1.dll" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.Direct2D1.xml" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.Direct3D11.dll" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.Direct3D11.xml" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.dll" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.DXGI.dll" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.DXGI.xml" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.XAudio2.dll" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.XAudio2.xml" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.XInput.dll" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.XInput.xml" />
+    <Content Include="bin\Windows\x86\Debug\SharpDX.xml" />
+    <Content Include="bin\Windows\x86\Debug\Sprint2.exe" />
+    <Content Include="bin\Windows\x86\Debug\Sprint2.pdb" />
+    <Content Include="Content\ArtifactSprites\DownClosedDoor.png" />
+    <Content Include="Content\ArtifactSprites\DownLockedDoor.png" />
+    <Content Include="Content\ArtifactSprites\DownOpenDoor.png" />
+    <Content Include="Content\ArtifactSprites\LeftClosedDoor.png" />
+    <Content Include="Content\ArtifactSprites\LeftLockedDoor.png" />
+    <Content Include="Content\ArtifactSprites\LeftOpenDoor.png" />
+    <Content Include="Content\ArtifactSprites\MovableBlock.png" />
+    <Content Include="Content\ArtifactSprites\RightClosedDoor.png" />
+    <Content Include="Content\ArtifactSprites\RightLockedDoor.png" />
+    <Content Include="Content\ArtifactSprites\RightOpenDoor.png" />
+    <Content Include="Content\ArtifactSprites\UpClosedDoor.png" />
+    <Content Include="Content\ArtifactSprites\UpLockedDoor.png" />
+    <Content Include="Content\ArtifactSprites\UpOpenDoor.png" />
+    <Content Include="Content\CharacterSprites\Oldman.png" />
+    <Content Include="Content\EnemySprites\AquamentusWalkLeft.png" />
+    <Content Include="Content\EnemySprites\AquamentusWalkRight.png" />
+    <Content Include="Content\EnemySprites\EnemyCloud.png" />
+    <Content Include="Content\EnemySprites\EnemyCloud2.png" />
+    <Content Include="Content\EnemySprites\GelWalk.png" />
+    <Content Include="Content\EnemySprites\GoriyaWalkDown.png" />
+    <Content Include="Content\EnemySprites\GoriyaWalkLeft.png" />
+    <Content Include="Content\EnemySprites\GoriyaWalkRight.png" />
+    <Content Include="Content\EnemySprites\GoriyaWalkUp.png" />
+    <Content Include="Content\EnemySprites\KeeseWalk.png" />
+    <Content Include="Content\EnemySprites\StalfosWalk.png" />
+    <Content Include="Content\EnemySprites\Trap.png" />
+    <Content Include="Content\EnemySprites\WallmasterWalkDownRight.png" />
+    <Content Include="Content\EnemySprites\WallmasterWalkUpLeft.png" />
+    <Content Include="Content\HUDSprites\0HP.png" />
+    <Content Include="Content\HUDSprites\1HP.png" />
+    <Content Include="Content\HUDSprites\2HP.png" />
+    <Content Include="Content\HUDSprites\3HP.png" />
+    <Content Include="Content\HUDSprites\4HP.png" />
+    <Content Include="Content\HUDSprites\5HP.png" />
+    <Content Include="Content\HUDSprites\6HP.png" />
+    <Content Include="Content\HUDSprites\8HP.png" />
+    <Content Include="Content\HUDSprites\GreenPoint.png" />
+    <Content Include="Content\HUDSprites\HUD.png" />
+    <Content Include="Content\HUDSprites\Logo.png" />
+    <Content Include="Content\HUDSprites\MapIcon.png" />
+    <Content Include="Content\HUDSprites\MapProp.png" />
+    <Content Include="Content\HUDSprites\RedPoint.png" />
+    <Content Include="Content\HUDSprites\SelectBox.png" />
+    <Content Include="Content\ItemSprites\Arrow.png" />
+    <Content Include="Content\ItemSprites\BlueRupy.png" />
+    <Content Include="Content\ItemSprites\Bow.png" />
+    <Content Include="Content\ItemSprites\Clock.png" />
+    <Content Include="Content\ItemSprites\Compass.png" />
+    <Content Include="Content\ItemSprites\Fairy.png" />
+    <Content Include="Content\ItemSprites\Heart.png" />
+    <Content Include="Content\ItemSprites\HeartContainer.png" />
+    <Content Include="Content\ItemSprites\Key.png" />
+    <Content Include="Content\ItemSprites\Map.png" />
+    <Content Include="Content\ItemSprites\Sword.png" />
+    <Content Include="Content\ItemSprites\Triforce.png" />
+    <Content Include="Content\ItemSprites\YellowRupy.png" />
+    <Content Include="Content\Unlimited.xml" />
+    <Content Include="Content\LinkSprites\LinkAttackDown.png" />
+    <Content Include="Content\LinkSprites\LinkAttackLeft.png" />
+    <Content Include="Content\LinkSprites\LinkAttackRight.png" />
+    <Content Include="Content\LinkSprites\LinkAttackUp.png" />
+    <Content Include="Content\LinkSprites\LinkDamaged.png" />
+    <Content Include="Content\LinkSprites\LinkIdleDown.png" />
+    <Content Include="Content\LinkSprites\LinkIdleLeft.png" />
+    <Content Include="Content\LinkSprites\LinkIdleRight.png" />
+    <Content Include="Content\LinkSprites\LinkIdleUp.png" />
+    <Content Include="Content\LinkSprites\LinkPickUp.png" />
+    <Content Include="Content\LinkSprites\LinkWalkDown.png" />
+    <Content Include="Content\LinkSprites\LinkWalkLeft.png" />
+    <Content Include="Content\LinkSprites\LinkWalkRight.png" />
+    <Content Include="Content\LinkSprites\LinkWalkUp.png" />
+    <Content Include="Content\Music\DungeonTheme.mp3" />
+    <Content Include="Content\Music\EndingTheme.mp3" />
+    <Content Include="Content\Music\MenuTheme.mp3" />
+    <Content Include="Content\Music\OverworldTheme.mp3" />
+    <Content Include="Content\Music\TitleTheme.mp3" />
+    <Content Include="Content\ProjectileSprites\AttackSwordDown.png" />
+    <Content Include="Content\ProjectileSprites\AttackSwordLeft.png" />
+    <Content Include="Content\ProjectileSprites\AttackSwordRight.png" />
+    <Content Include="Content\ProjectileSprites\AttackSwordUp.png" />
+    <Content Include="Content\ProjectileSprites\Bomb.png" />
+    <Content Include="Content\ProjectileSprites\Boomerang.png" />
+    <Content Include="Content\ProjectileSprites\UseBomb.png" />
+    <Content Include="Content\ProjectileSprites\UseBoomerang.png" />
+    <Content Include="Content\RoomSprites\DetailedMap.png" />
+    <Content Include="Content\RoomSprites\Room.png" />
+    <Content Include="Content\Level1.xml" />
+    <Content Include="Content\SoundEffects\ArrowBoomerang.wav" />
+    <Content Include="Content\SoundEffects\BombBlow.wav" />
+    <Content Include="Content\SoundEffects\BombDrop.wav" />
+    <Content Include="Content\SoundEffects\BossHurt.wav" />
+    <Content Include="Content\SoundEffects\BossScream.wav" />
+    <Content Include="Content\SoundEffects\DoorUnlock.wav" />
+    <Content Include="Content\SoundEffects\EnemyDie.wav" />
+    <Content Include="Content\SoundEffects\EnemyHit.wav" />
+    <Content Include="Content\SoundEffects\Fanfare.wav" />
+    <Content Include="Content\SoundEffects\GetHeart.wav" />
+    <Content Include="Content\SoundEffects\GetItem.wav" />
+    <Content Include="Content\SoundEffects\GetRupee.wav" />
+    <Content Include="Content\SoundEffects\KeyAppear.wav" />
+    <Content Include="Content\SoundEffects\LinkDie.wav" />
+    <Content Include="Content\SoundEffects\LinkHurt.wav" />
+    <Content Include="Content\SoundEffects\LowHealth.wav" />
+    <Content Include="Content\SoundEffects\Recorder.wav" />
+    <Content Include="Content\SoundEffects\RefillLoop.wav" />
+    <Content Include="Content\SoundEffects\Secret.wav" />
+    <Content Include="Content\SoundEffects\Shield.wav" />
+    <Content Include="Content\SoundEffects\SwordCombined.wav" />
+    <Content Include="Content\SoundEffects\SwordShoot.wav" />
+    <Content Include="Content\SoundEffects\SwordSlash.wav" />
+    <Content Include="Content\SoundEffects\Text.wav" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeMaintainability-CongLiu.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeMaintainability-weiyi.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeMaintainability-Xiaochen.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeMaintainability-Zongming.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeMaintainabilityOf CongLiu-KunPeng.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeReadability-Xiaochen.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeReadability-Zongming.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeReadabilityOfZongmingTian-KunPeng.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeReadability_CongLiu.txt" />
+    <Content Include="Documents\Sprint2\CodeReview\CodeReadbility-weiyi.txt" />
+    <Content Include="Documents\Sprint2\README.txt" />
+    <Content Include="Documents\Sprint2\Sprint2 Reflection.txt" />
+    <Content Include="Documents\Sprint3\Code Review\CodeMaintainability-CongLiu.txt" />
+    <Content Include="Documents\Sprint3\Code Review\CodeMaintainability-KunPeng.txt" />
+    <Content Include="Documents\Sprint3\Code Review\CodeMaintainability-weiyi.txt" />
+    <Content Include="Documents\Sprint3\Code Review\CodeReadability-KunPeng.txt" />
+    <Content Include="Documents\Sprint3\Code Review\CodeReadability-CongLiu.txt" />
+    <Content Include="Documents\Sprint3\Code Review\CodeReadbility-weiyi.txt" />
+    <Content Include="Documents\Sprint3\Code Review\README.txt" />
+    <Content Include="Documents\Sprint3\Sprint3 reflection.txt" />
+    <Content Include="Documents\Sprint4\Code Review\CodeMaintainability-CongLiu.txt" />
+    <Content Include="Documents\Sprint4\Code Review\CodeMaintainability-ZongmingTian.txt" />
+    <Content Include="Documents\Sprint4\Code Review\CodeReadability-CongLiu.txt" />
+    <Content Include="Documents\Sprint4\Code Review\CodeReadability-ZongmingTian.txt" />
+    <Content Include="Documents\Sprint4\CodeMaintainability-Xiaochen.txt" />
+    <Content Include="Documents\Sprint4\CodeReadability-Xiaochen.txt" />
+    <Content Include="Documents\Sprint5\Code Review\CodeMaintainability-CongLiu.txt" />
+    <Content Include="Documents\Sprint5\Code Review\CodeMaintainability-ZongmingTian.txt" />
+    <Content Include="Documents\Sprint5\Code Review\CodeReadability-CongLiu.txt" />
+    <Content Include="Documents\Sprint5\Code Review\CodeReadability-ZongmingTian.txt" />
+    <Content Include="Icon.ico" />
+    <Content Include="obj\x86\Debug\Sprint2.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\Sprint2.exe" />
+    <Content Include="obj\x86\Debug\Sprint2.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Sprint2\v16\.suo" />
+    <None Include=".vs\Sprint2\v16\Server\sqlite3\db.lock" />
+    <None Include=".vs\Sprint2\v16\Server\sqlite3\storage.ide" />
+    <None Include=".vs\Sprint2\v16\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\Sprint2\v16\Server\sqlite3\storage.ide-wal" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\DownClosedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\DownLockedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\DownOpenDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\LeftClosedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\LeftLockedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\LeftOpenDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\MovableBlock.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\RightClosedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\RightLockedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\RightOpenDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\UpClosedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\UpLockedDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\UpOpenDoor.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ArtifactSprites\Water.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\CharacterSprites\Oldman.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\AquamentusWalkLeft.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\AquamentusWalkRight.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\EnemyCloud.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\GelWalk.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\GoriyaWalkDown.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\GoriyaWalkLeft.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\GoriyaWalkRight.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\GoriyaWalkUp.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\KeeseWalk.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\StalfosWalk.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\Trap.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\WallmasterWalkDownRight.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\WallmasterWalkUpLeft.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\EnemySprites\WallmasterWalkUpRight.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\0HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\1HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\2HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\3HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\4HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\5HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\6HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\8HP.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\Font.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\GreenPoint.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\HUD.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\Logo.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\MapIcon.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\MapProp.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\RedPoint.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\HUDSprites\SelectBox.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Arrow.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\BlueRupy.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Bow.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Clock.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Compass.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Fairy.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Heart.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\HeartContainer.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Key.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Map.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Sword.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\Triforce.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ItemSprites\YellowRupy.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkAttackDown.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkAttackLeft.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkAttackRight.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkAttackUp.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkDamaged.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkIdleDown.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkIdleLeft.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkIdleRight.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkIdleUp.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkPickUp.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkWalkDown.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkWalkLeft.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkWalkRight.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\LinkSprites\LinkWalkUp.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\Music\DungeonTheme.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\Music\EndingTheme.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\Music\MenuTheme.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\Music\OverworldTheme.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\Music\TitleTheme.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ProjectileSprites\Bomb.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ProjectileSprites\Boomerang.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ProjectileSprites\UseBomb.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\ProjectileSprites\UseBoomerang.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\RoomSprites\DetailedMap.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\RoomSprites\Map.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\RoomSprites\Room.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\ArrowBoomerang.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\BombBlow.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\BombDrop.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\BossHurt.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\BossScream.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\DoorUnlock.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\EnemyDie.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\EnemyHit.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\Fanfare.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\GetHeart.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\GetItem.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\GetRupee.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\KeyAppear.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\LinkDie.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\LinkHurt.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\LowHealth.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\Recorder.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\RefillLoop.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\Secret.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\Shield.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\SwordCombined.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\SwordShoot.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\SwordSlash.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\SoundEffects\Text.xnb" />
+    <None Include="bin\Windows\x86\Debug\Content\TextSprite\Text.xnb" />
+    <None Include="Content\bin\Windows\Content\CharacterSprites\Oldman.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\AquamentusWalkLeft.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\AquamentusWalkRight.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\EnemyCloud.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\GelWalk.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\GoriyaWalkDown.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\GoriyaWalkLeft.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\GoriyaWalkRight.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\GoriyaWalkUp.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\KeeseWalk.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\StalfosWalk.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\Trap.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\WallmasterWalkDownRight.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\WallmasterWalkUpLeft.xnb" />
+    <None Include="Content\bin\Windows\Content\EnemySprites\WallmasterWalkUpRight.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Arrow.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\BlueRupy.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Bow.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Clock.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Compass.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Fairy.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Heart.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\HeartContainer.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Key.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Map.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Sword.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\Triforce.xnb" />
+    <None Include="Content\bin\Windows\Content\ItemSprites\YellowRupy.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkAttackDown.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkAttackLeft.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkAttackRight.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkAttackUp.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkDamaged.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkIdleDown.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkIdleLeft.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkIdleRight.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkIdleUp.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkPickUp.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkWalkDown.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkWalkLeft.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkWalkRight.xnb" />
+    <None Include="Content\bin\Windows\Content\LinkSprites\LinkWalkUp.xnb" />
+    <None Include="Content\bin\Windows\Content\ProjectileSprites\Bomb.xnb" />
+    <None Include="Content\bin\Windows\Content\ProjectileSprites\Boomerang.xnb" />
+    <None Include="Content\bin\Windows\Content\ProjectileSprites\UseBomb .xnb" />
+    <None Include="Content\bin\Windows\Content\ProjectileSprites\UseBomb.xnb" />
+    <None Include="Content\bin\Windows\Content\ProjectileSprites\UseBoomerang.xnb" />
+    <None Include="Content\bin\Windows\Content\TextSprite\Text.xnb" />
+    <None Include="Content\bin\Windows\EnemySprites\EnemyCloud.xnb" />
+    <None Include="Content\bin\Windows\LinkSprites\LinkWalkDown.xnb" />
+    <None Include="Content\bin\Windows\LinkSprites\LinkWalkUp.xnb" />
+    <None Include="Content\HUDSprites\Font.spritefont" />
+    <None Include="Content\obj\Windows\.mgcontent" />
+    <None Include="Content\obj\Windows\.mgstats" />
+    <None Include="Content\obj\Windows\Content\.mgcontent" />
+    <None Include="Content\obj\Windows\Content\.mgstats" />
+    <None Include="Content\obj\Windows\Content\CharacterSprites\Oldman.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\AquamentusWalkLeft.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\AquamentusWalkRight.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\EnemyCloud.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\GelWalk.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\GoriyaWalkDown.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\GoriyaWalkLeft.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\GoriyaWalkRight.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\GoriyaWalkUp.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\KeeseWalk.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\StalfosWalk.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\Trap.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\WallmasterWalkDownRight.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\WallmasterWalkUpLeft.mgcontent" />
+    <None Include="Content\obj\Windows\Content\EnemySprites\WallmasterWalkUpRight.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Arrow.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\BlueRupy.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Bow.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Clock.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Compass.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Fairy.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Heart.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\HeartContainer.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Key.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Map.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Sword.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\Triforce.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ItemSprites\YellowRupy.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkAttackDown.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkAttackLeft.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkAttackRight.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkAttackUp.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkDamaged.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkIdleDown.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkIdleLeft.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkIdleRight.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkIdleUp.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkPickUp.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkWalkDown.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkWalkLeft.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkWalkRight.mgcontent" />
+    <None Include="Content\obj\Windows\Content\LinkSprites\LinkWalkUp.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ProjectileSprites\Bomb.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ProjectileSprites\Boomerang.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ProjectileSprites\UseBomb .mgcontent" />
+    <None Include="Content\obj\Windows\Content\ProjectileSprites\UseBomb.mgcontent" />
+    <None Include="Content\obj\Windows\Content\ProjectileSprites\UseBoomerang.mgcontent" />
+    <None Include="Content\obj\Windows\Content\TextSprite\Text.mgcontent" />
+    <None Include="Content\obj\Windows\EnemySprites\EnemyCloud.mgcontent" />
+    <None Include="Content\obj\Windows\LinkSprites\LinkWalkDown.mgcontent" />
+    <None Include="Content\obj\Windows\LinkSprites\LinkWalkUp.mgcontent" />
+    <None Include="Content\TextSprite\File.spritefont" />
+    <None Include="Documents\Sprint2\Sprint2 reflection.docx" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\Sprint2.csproj.CopyComplete" />
+    <None Include="obj\x86\Debug\Sprint2.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\x86\Debug\Sprint2.csprojAssemblyReference.cache" />
+    <None Include="obj\x86\Release\Sprint2.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\x86\Release\Sprint2.csprojAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Windows\Content\" />
+    <Folder Include="bin\Windows\x86\Release\" />
+    <Folder Include="obj\Windows\Content\" />
+    <Folder Include="obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

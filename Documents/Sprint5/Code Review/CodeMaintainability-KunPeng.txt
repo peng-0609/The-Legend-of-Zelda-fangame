@@ -1,0 +1,9 @@
+Author of the code review: Kun Peng
+Date of the code review: 12/02/2019
+Sprint number: 5
+Name of the .cs file being reviewed: LinkDoorCollision.cs
+Author of the .cs file being reviewed: Xiaochen Feng
+Specific comments on code quality: The new version of LinkDoorCollision is clear and simple which manages to deal with collisions
+under 3 different door states.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+If there is a new condition we should deal with, we can simply add a case to the switch part.

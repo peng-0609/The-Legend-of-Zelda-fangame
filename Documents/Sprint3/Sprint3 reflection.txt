@@ -1,0 +1,8 @@
+In this sprint, our team managed to combine Azue Devops with our work which enabled us to follow up each other's phases in time. As is 
+shown in the Board, we worked on and finished more tasks during the second half period of the sprint. Though the reason might be that
+we needed to unite the whole project smoothly after we've finished most of the works, we still needed to allocate the time more properly.
+Besides the required objects such as collision, item loading with files, movement and level, we also re-wrote Link's decorator classes
+and some of Link's states as the improvement of Sprint2. Additionally, we modified interfaces and classes of enemies and items so as 
+to fit newly added functions in Sprint3.
+One of the problems we encountered was the unbalanced work assignment for this sprint. We found that there were too much work with 
+collision for only one team member to finish so we re-assigned the tasks to two persons instead.

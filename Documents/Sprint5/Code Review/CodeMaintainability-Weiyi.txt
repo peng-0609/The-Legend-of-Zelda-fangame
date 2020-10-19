@@ -1,0 +1,9 @@
+Author of the code review: Weiyi Jiang
+Date of the code review: 12/02/2019
+Sprint number: 5
+Name of the .cs file being reviewed: LinkDoorCollision.cs
+Author of the .cs file being reviewed: Xiaochen Feng
+Specific comments on code quality: The code quality is good. In update position, it uses swtich case for different door and it is pretty simple and has 
+high cohesion for the code of the other classes.
+
+A hypothetical change to make to the game related to file being reviewed: There is no hypothetical change. 

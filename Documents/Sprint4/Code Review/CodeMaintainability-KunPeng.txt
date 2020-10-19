@@ -1,0 +1,9 @@
+Author of the code review: Kun Peng
+Date of the code review: 11/11/2019
+Sprint number: 4
+Name of the .cs file being reviewed: xxxPhysicalProperty
+Author of the .cs file being reviewed: Zongming Tian
+Specific comments on code quality
+These classes separate objects' physical attributes from the object classes, which not only simplify object classes but are also easy to edit.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+If Link needs a new physical property, we can just add thid property to the LinkPhysicalProperty class and initialize it in the constructor.

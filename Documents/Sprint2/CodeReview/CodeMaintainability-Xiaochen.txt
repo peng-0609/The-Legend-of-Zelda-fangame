@@ -1,0 +1,18 @@
+Review author: Xiaochen Feng
+Date: 9/27/2019
+Sprint 2
+
+File: Game1.cs
+Author of these .cs file:  Weiyi Jiang
+
+Specific comments on code quality: 
+
+The class has a high cohesion and does not have any code smells.
+
+A hypothetical change to make to the game related to file being reviewed
+and how the current implementation could or could not easily support that change:
+
+In the implementation, the main class connects all the object throught the game. 
+Through the initialation, it allows game to prepare well when it starts.
+And in Enemy and Link object, it avoid using public field instead of private field to make 
+the code in loosely coupling. I think the code quality is quitely nice.

@@ -1,0 +1,8 @@
+Author of the code review: Weiyi Jiang
+Date of the code review: 11/11/2019
+Sprint number: 4
+Name of the .cs file being reviewed: HUDSpriteFactory and SoundEffectFactory MusicFactory
+Author of the .cs file being reviewed: Cong liu
+Number of minutes taken to complete the review: 5
+Specific comments on what is readable and what is not: For the code, there is comment explaining the meaning of the variable. As for SoundFactory and HUDFactory, it is formulaic and no
+other logic. As for the Music factory, there is a boolean variable IsRepeating to let it broadcast multiple times. Besides, there is a Resume function to let it go back after suspending.

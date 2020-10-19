@@ -1,0 +1,19 @@
+Review author: Xiaochen Feng
+Date: 10/18/2019
+Sprint 3
+
+File: level.cs
+Author of these .cs file:  Kun Peng, Cong Liu
+
+Specific comments on code quality: 
+
+The class has a high cohesion and does not have code smells.
+
+A hypothetical change to make to the game related to file being reviewed
+and how the current implementation could or could not easily support that change:
+
+In the implementation, the main class connects all the object throught the game. 
+Through the initialation, the class initialize all the needed variable at the beginning using IList,
+and then use for each loop to update and draw. The structure is very clear and make evey part isolated with each other.
+Therefore, I think the code quality is very good.
+

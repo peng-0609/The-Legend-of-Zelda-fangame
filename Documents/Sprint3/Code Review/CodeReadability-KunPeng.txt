@@ -1,0 +1,8 @@
+Author of the code review: Kun Peng
+Date of the code review: 10/18/2019
+Sprint number: 3
+Name of the .cs file being reviewed: files in Collision folder
+Author of the .cs file being reviewed: Xiaochen Feng, Zongming Tian
+Number of minutes taken to complete the review: 4
+Specific comments on what is readable and what is not: These classes used nested if statements to clearly distinguish each possible situations of the collisions.
+Since the variable names were easy to understand, these files were of highly readability.

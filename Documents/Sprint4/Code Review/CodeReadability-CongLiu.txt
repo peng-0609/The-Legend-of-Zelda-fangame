@@ -1,0 +1,9 @@
+﻿Author of the code review: Cong Liu
+Date of the code review: 11/11
+Sprint number: 4
+Name of the .cs file being reviewed: GameStateManager.cs, MenuState.cs, WorldState.cs, GameWinState.cs, GameOverState.cs
+Author of the .cs file being reviewed: Zongming Tian, Xiaochen Feng
+Number of minutes taken to complete the review: 25 minutes
+Specific comments on what is readable and what is not: The methods in the GameStates files are precise and each name of the class file
+exactly indicates waht state it functions as. But I am a little confused about what the mehods Up and Down mean. There are also some cases
+where you use upper case for private field which should be avoided.

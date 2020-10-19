@@ -1,0 +1,10 @@
+Author of the code review: Weiyi Jiang
+Date of the code review: 20191018
+Sprint number: Sprint 3
+Name of the .cs file being reviewed: KeyboardController
+Author of the .cs file being reviewed:ZongMing tian
+Specific comments on code quality: for the code, the RegisterCommand and Update method looks fine. The name of variable is obvious and has high cohesion. However, for the method ReturnToIdle, it is
+hard to figure out what this method is doing casue there is a long if statement, which is not concise. Overall the class is readable and has high cohesion.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change: As for the link, when it has 
+collision, it will twinkle, and if it does not has collision, we still let it twinkle. Then at this time we need to add something to judge if it should be idle or twinkle because we still
+want it twinkle for a while after being hitted.

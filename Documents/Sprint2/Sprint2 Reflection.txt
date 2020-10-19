@@ -1,0 +1,25 @@
+﻿Sprint2 reflection
+It didn’t take a long time for our team to breakthrough the run-in period before this sprint, so 
+at the beginning we soon made a clear schedule and task assignments. During the last three 
+weeks, we also finished every phase on time. We all agreed that we did a perfect teamwork
+altogether except that we eventually didn’t use the Board from Azure, since we were still not 
+familiar with this website. As an alternative, our schedule is briefly listed as follow:
+09/11	Sprint2 assigned
+09/13	Discussion on what to do with the project
+09/16	Tasks assigned to each team member:
+		Xiaochen Feng: Enemies classes, states and related interfaces
+		Weiyi Jiang: Sprite classes, sprite factory classes and related interfaces together with Cong Liu; sprite sheets edition, main class
+		Cong Liu: Sprite classes, sprite factory classes and related interfaces together with Weiyi Jiang
+		Kun Peng: Link, items classes, states and related interfaces
+		Zongming Tian: Command, controller classes and related interfaces, main class
+09/16~09/22		Most of the project finished
+09/22~09/27		Refactoring, integration and debugging; final reflection and summary of the sprint
+We did some improvements on the project which made it more constructive. For instance, at 
+first we didn’t notice that spacing between sprites with different width or height might affect 
+the display of the objects, so we re-edited the sprite sheets and the display became more natural. 
+Additionally, we used sprite factory to make codes simple and more readable.
+There were also shortcomings of our team. The most noteworthy one was the lack of 
+use of functions in Azure Devops. We tried to put our tasks on the Board at the very beginning, but 
+we failed to update or modify our schedule in time probably because we still haven’t formed a 
+habit using this platform to record our works. We believed that in the future sprints we would 
+have a better command of using Azure.

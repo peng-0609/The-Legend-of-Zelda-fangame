@@ -1,0 +1,9 @@
+﻿Author of the code review: Zongming
+Date of the code review:20191018
+Sprint number:Sprint 3
+Name of the .cs file being reviewed:Level.cs and MouseController.cs
+Author of the .cs file being reviewed:Weiyi Jiang,Cong Liu
+Number of minutes taken to complete the review: About 5 minutes
+Specific comments on what is readable and what is not: For the level.cs file, the code is easy to read because the function is divided into different kinds and each function
+uses the function from the other entity classes. But in mousecontroller class, many variables are created without any comments, so it will take sometimes to understand what those 
+variables mean.

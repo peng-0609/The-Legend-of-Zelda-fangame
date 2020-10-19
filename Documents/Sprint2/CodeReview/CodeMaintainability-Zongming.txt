@@ -1,0 +1,12 @@
+﻿Author of the code review: Zongming Tian
+Date of the code review: 20190927
+Sprint number: Sprint 2
+Name of the .cs file being reviewed:CharacterSpriteFactory, EnemySpriteFactory,ItemSpriteFactory,LinkSpriteFactory,ProjectileSpriteFactory
+Author of the .cs file being reviewed:Cong Liu
+Specific comments on code quality: It isolated the codes to three parts, inialize the instance and spritesheet, and then load all the textures, finally create spritesheet. So I think
+the efficiency is maximizing in these classes, the running time for this class is only creating sprite time, don't have other trivialous steps. Because the functions are very simple, 
+it is also easy to maintain the correctnesss; However, the if the code is changed to a new environment, the code needs to change a lot, since it will need to use AnimateSpritesheet 
+or NonAnimateSprite. 
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+The change I want to make is to move the sprite class all in the same directory or create the sprite and drawing function inside the class to increase the maintainability, but this 
+is hard to achieve, since there are lots of other files still need to use sprite class, and they need to classified each class into their own folder. 

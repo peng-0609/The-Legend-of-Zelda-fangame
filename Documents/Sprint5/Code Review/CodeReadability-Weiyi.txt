@@ -1,0 +1,9 @@
+Author of the code review: Weiyi Jiang
+Date of the code review: 12/02/2019
+Sprint number: 5
+Name of the .cs file being reviewed: unlimitedstate 
+Author of the .cs file being reviewed: Cong liu
+Number of minutes taken to complete the review: 5
+Specific comments on what is readable and what is not: it is much alike the state of the other gameState. The only difference
+is in the Unlimited state function. The initial tool already has boomerang and bomb. It is readable cause the main function
+is the same as other class

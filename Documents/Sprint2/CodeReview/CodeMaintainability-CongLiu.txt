@@ -1,0 +1,10 @@
+﻿Author of the code review: Cong Liu
+Date of the code review: 09/27
+Sprint number: 2
+Name of the .cs file being reviewed: Link.cs and all calsses under items folder
+Author of the .cs file being reviewed: Kun Peng
+Specific comments on code quality: Overall, the code quality is good and meets the requirement of Sprint 2. The classes use state pattern to make them easily to swicth 
+different states. They only implement the methods defined in the interface which makes it look very concise.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:
+I think the Direction enum in the Link.cs can be extrated to a single file that includes all the enums that might be used now and in the future.  And I think the current 
+implementation could easily support that change.

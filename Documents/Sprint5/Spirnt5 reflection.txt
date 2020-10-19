@@ -1,0 +1,4 @@
+Our team worked quite smoothly during the final sprint. Since we only had minor problems after Sprint4, it didn't take long to fix the bugs.
+Furthermore, we also designed and implemented several new features together. We added cheat code, 1 HP mode and unlimited mode to the game.
+Since we worked together, there was no clear work division on the Board.
+In conclusion, we all had good experience working with each other.

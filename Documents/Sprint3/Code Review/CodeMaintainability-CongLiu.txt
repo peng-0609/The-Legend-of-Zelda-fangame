@@ -1,0 +1,10 @@
+﻿Author of the code review: Cong Liu
+Date of the code review: 10/18
+Sprint number: 3
+Name of the .cs file being reviewed: ResetCommand.cs and MouseController.cs
+Author of the .cs file being reviewed: Weiyi Jiang
+Specific comments on code quality: It is easily to see some code reuse between the ResetCommand.cs and MouseController.cs. I can see you want to reload other rooms
+in the level and reinitialize the controller list and collision handler. But their code are almost the same. Also, there is code reuse between MouseController.cs and 
+BackgroundSprite.cs because they are very similar in the roomSource dictionary.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:
+I would recommend to merge the similar code or include them in one file.

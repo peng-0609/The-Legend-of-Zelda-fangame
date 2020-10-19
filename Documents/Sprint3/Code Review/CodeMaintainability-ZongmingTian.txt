@@ -1,0 +1,11 @@
+﻿Author of the code review: Zongming Tian
+Date of the code review: 20191018
+Sprint number: Sprint 3
+Name of the .cs file being reviewed:All the CollisionHandler.cs files.
+Author of the .cs file being reviewed:Xiaochen Feng
+Specific comments on code quality: In each class, just using one test function to test if collison handles; If collison happens, it will use the collided function from the entity classes,
+and then update the location. I think it has low maintainability, since if some parts of codes have problem, you should first make sure whether it is the test part has the problem or 
+updating location part has the problem, then you should just modify that part and also make sure the other part can still run after rewritting code.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+I think the coder can divide the test functions into three parts-test,collision handling, and updating location. If it is done in this way, people will easily see where the error is,
+and modify it. I think it is very easy to be achieved,many other groups write the collision class files in this way.

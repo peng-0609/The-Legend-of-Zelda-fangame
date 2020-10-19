@@ -1,0 +1,8 @@
+﻿Author of the code review: Zongming Tian
+Date of the code review:20191201
+Sprint number:Sprint 5
+Name of the .cs file being reviewed:UnlimitedState.cs
+Author of the .cs file being reviewed:Kun Peng
+Number of minutes taken to complete the review: About 5 minutes
+Specific comments on what is readable and what is not:It is very easy for me to understand what the class means, so I think it is in high readability. The whole class combine with each other very well,
+and I can figure what these functions mean easyily.

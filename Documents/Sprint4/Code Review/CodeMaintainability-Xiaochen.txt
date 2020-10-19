@@ -1,0 +1,19 @@
+Review author: Xiaochen Feng
+Date: 11/11/2019
+Sprint 4
+
+File: DungeonHUD.cs
+Author of these .cs file:  Kun Peng, Cong Liu
+
+Specific comments on code quality: 
+
+The class has a high cohesion and does not have code smells.
+
+A hypothetical change to make to the game related to file being reviewed
+and how the current implementation could or could not easily support that change:
+
+The construction is easy to understand and he current implementation can 
+be easily modified since there are not much connection with other classes.
+The structure is very clear and make evey part isolated with each other.
+Therefore, I think the code quality is very good.
+

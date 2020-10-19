@@ -1,0 +1,13 @@
+Review author: Weiyi Jiang
+Date: 11/11/2019
+Sprint 4
+
+File: GameState
+Author of these .cs file:  Xiaochen Feng, Zongming tian
+
+Specific comments on code quality: 
+The code quality is high, for each state, it uses vector to save state and in different case, use switch to do different actions. There is no complex logic and it has high cohesion. 
+I think the code can support all actions of the code.  The only thing I think can improve is in the GameStateManager. For the function changetoleft, right, up, down. All the code are the
+same. To make it easier, I think we can write a method outside the scope and implement it in different function.(cause they are the same!)
+
+

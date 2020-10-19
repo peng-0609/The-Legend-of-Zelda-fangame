@@ -1,0 +1,9 @@
+Author of the code review: Kun Peng
+Date of the code review: 10/18/2019
+Sprint number: 3
+Name of the .cs file being reviewed: LevelLoaderFactory.cs
+Author of the .cs file being reviewed: Cong Liu
+Specific comments on code quality
+This factory clearly divided each item's loading by their types into several methods, which was efficient to edit if we had problem with certain parts.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+If we need to load a new type of objects, we can simply initialize a new list of this type, add another case in CreateGameObjects() and write a new method to add specific objects into the list.

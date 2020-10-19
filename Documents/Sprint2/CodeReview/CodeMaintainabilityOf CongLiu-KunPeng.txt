@@ -1,0 +1,10 @@
+Author of the code review: Kun Peng
+Date of the code review: 09/27
+Sprint number: 2
+Name of the .cs file being reviewed: LinkSpriteFactory.cs
+Author of the .cs file being reviewed: Cong Liu
+Specific comments on code quality:
+All codes are written in a clear way and all variables names are in the same form. Since it is easy to find the method to be modified,
+I believe the code is of high maintainability.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+If a new sprite sheet is added, just load the sheet in LoadAllTextures() and write a new constructor.

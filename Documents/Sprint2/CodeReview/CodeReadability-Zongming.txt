@@ -1,0 +1,9 @@
+﻿Author of the code review: Zongming
+Date of the code review:20190927
+Sprint number:Sprint 2
+Name of the .cs file being reviewed:Game1.cs
+Author of the .cs file being reviewed: All of the group
+Number of minutes taken to complete the review: About 5 minutes
+Specific comments on what is readable and what is not: It is still readable, since all the variables are presented in the class, and the function and variable name is easy to understand. 
+But sometimes I will find it is hard to understand what the author's idea is; In loadContent function, sometimes author will construct and add class into list, sometimes it will just add
+vector directly. In Reset function, it copies all the loadcontent and initialization to the functions.

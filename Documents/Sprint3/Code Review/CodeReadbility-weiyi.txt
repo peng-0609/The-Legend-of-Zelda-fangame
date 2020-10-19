@@ -1,0 +1,9 @@
+Author of the code review: Weiyi
+Date of the code review:20191018
+Sprint number:Sprint 3
+Name of the .cs file being reviewed: AllCollisionHandler
+Author of the .cs file being reviewed: Xiaochen Feng
+Number of minutes taken to complete the review: About 10 minutes
+Specific comments on what is readable and what is not:  For the CollesionHnadler, it is very readable. For each class method, the name of the method is readble, the collesion between enemy,
+item, door , block. As for the code, the for loop and if statment is well organized, the layout is well-defined, the variable has a readable name, the algorithm is concise and pretty alike
+for each function, which is correct.

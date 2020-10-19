@@ -1,0 +1,18 @@
+Review author: Weiyi Jiang
+Date: 9/26/2019
+Sprint 2
+
+File: all cs file under Enemies and Item
+Author of these .cs file:  Xiaochen Feng & Kun Peng
+Comments on code quality:
+By this sprint, all of the enemy  and item classes should work fine. The enemy files works as a classes to inherite from IEnemy interface.
+The item files work as a class to inherite from IItem interface. 
+The file uses Enemy() and Item() method to construct different types of enemies and items. Also, the file uses Draw(SpriteBatch spriteBatch) method 
+that was inheritted from IEnemy to draw with spriteBatch, at a given location 'spriteLocation'.  It should be take care that in the enemy file it 
+uses  Draw(SpriteBatch spriteBatch), however, in the item file it uses Draw(SpriteBatch spriteBatch, Vector2 location), which is a little bit different.
+Currently this is a very good way of implement and organize enemy and its methods. For enemy it has right state and enough function for moveup and
+down, left or right. It should be careful that each different enemy may have different function, and he cares about it.
+As for Item file, it is simple cause it only has state and update and draw cause it is stateless.
+As far as I am concerned, right now it can support all changes and implementation. However, as we do much more about enemy, there might be slight
+change about it cause right now enemey do not move and we do cannot see error.
+

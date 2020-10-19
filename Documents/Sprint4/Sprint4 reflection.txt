@@ -1,0 +1,6 @@
+To finish Sprint4, our team started earlier than before and had clearer division of work. We also had our first in-class code review
+for this sprint, which we thought was very helpful.
+We added HUD and menu to the game and simply increased the screen's height, which was different with the original game.
+This change made it convenient to modify the coordinates of all of our objects. We also used one camera to move the game background
+and the other one to move the whole menu.
+In the final sprint, we might continue modifying enemy's properties.

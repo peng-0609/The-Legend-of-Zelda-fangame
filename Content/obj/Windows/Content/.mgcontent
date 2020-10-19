@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/DownClosedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/DownLockedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/DownOpenDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/LeftClosedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/LeftLockedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/LeftOpenDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/MovableBlock.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/RightClosedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/RightLockedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/RightOpenDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/UpClosedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/UpLockedDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/UpOpenDoor.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ArtifactSprites/Water.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/CharacterSprites/Oldman.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/AquamentusWalkLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/AquamentusWalkRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/EnemyCloud.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/GelWalk.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/GoriyaWalkDown.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/GoriyaWalkLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/GoriyaWalkRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/GoriyaWalkUp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/KeeseWalk.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/StalfosWalk.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/Trap.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/WallmasterWalkDownRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/EnemySprites/WallmasterWalkUpLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/0HP.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/1HP.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/2HP.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/3HP.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/4HP.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/5HP.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/6HP.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/EmptyHeart.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/Font.spritefont</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/FullHeart.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/GreenPoint.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/HalfHeart.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/HUD.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/Logo.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/MapIcon.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/MapProp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/RedPoint.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/HUDSprites/SelectBox.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Arrow.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/BlueRupy.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Bow.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Clock.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Compass.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Fairy.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Heart.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/HeartContainer.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Key.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Map.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Sword.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/Triforce.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ItemSprites/YellowRupy.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkAttackDown.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkAttackLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkAttackRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkAttackUp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkDamaged.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkIdleDown.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkIdleLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkIdleRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkIdleUp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkPickUp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkWalkDown.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkWalkLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkWalkRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/LinkSprites/LinkWalkUp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/Music/DungeonTheme.mp3</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/Music/EndingTheme.mp3</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/Music/MenuTheme.mp3</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/Music/OverworldTheme.mp3</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/Music/TitleTheme.mp3</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/AttackSwordDown.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/AttackSwordLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/AttackSwordRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/AttackSwordUp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/Bomb.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/Boomerang.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/FireBall.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/ShootedArrowDown.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/ShootedArrowLeft.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/ShootedArrowRight.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/ShootedArrowUp.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/UseBomb.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/ProjectileSprites/UseBoomerang.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/RoomSprites/DetailedMap.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/RoomSprites/Map.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/RoomSprites/Room.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/RoomSprites/Unlimited.png</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/ArrowBoomerang.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/BombBlow.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/BombDrop.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/BossHurt.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/BossScream.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/DoorUnlock.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/EnemyDie.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/EnemyHit.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/Fanfare.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/GetHeart.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/GetItem.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/GetRupee.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/KeyAppear.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/LinkDie.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/LinkHurt.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/LowHealth.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/Recorder.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/RefillLoop.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/Secret.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/Shield.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/SwordCombined.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/SwordShoot.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/SwordSlash.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/SoundEffects/Text.wav</File>
+    <File>C:/Users/Administrator/Source/Repos/Sprint2/Sprint2/Content/TextSprite/File.spritefont</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File>TextSprite/Text.spritefont</File>
+  </DestFiles>
+</SourceFileCollection>

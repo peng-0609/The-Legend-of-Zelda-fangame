@@ -1,0 +1,11 @@
+﻿Author of the code review: Cong Liu
+Date of the code review: 12/2
+Sprint number: 4
+Name of the .cs file being reviewed: GameOverState.cs, GamePausingState.cs, GameTransitionPausingState.cs, MenuState
+Author of the .cs file being reviewed: Zongming Tian
+Specific comments on code quality: For this sprint, I see there are some modifications and tweaks to the several game states. For example, you change the restart to enable 
+players can be back to the menu and select the mode they want to play after game ends, wchich I think can add more game experience and convenience. Also, since we add several
+new modes to the game, you adjust some parts to fit them. But I can there are some code being reused and may be removed. Since we will set the boolean value of Unlimited to true 
+in the UnlimitedState constructor, there are some places that don't need to reset the value.
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change:
+So far, I think it would be very easy and convenient if we want to add some new game modes. For the code reuse part, you can jusy simply remove them.

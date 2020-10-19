@@ -1,0 +1,17 @@
+Review author: Xiaochen Feng
+Date: 12/1/2019
+Sprint 5
+
+File: GameStateManager.cs
+Author of these .cs file: 
+Specific comments on code quality: Cong Liu, Zongming Tian, Kun Peng, Xiaochen Feng
+
+The class has a high cohesion and does not have code smells. Also, in sprint 5, we added two more different playing mode.
+And the modification is based on the original GameStateManager. Therefore, I think the code quality is good.
+
+A hypothetical change to make to the game related to file being reviewed
+and how the current implementation could or could not easily support that change:
+
+Since the changes are based on the previous version of game state class. So, the current implementation should support well.
+And most of changes in game state are also related on game state manager. Therefore, if something goes wrong, we can find easily
+based on the previous experience.

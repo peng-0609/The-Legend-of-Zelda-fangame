@@ -1,0 +1,9 @@
+﻿Author of the code review: Cong Liu
+Date of the code review: 10/18
+Sprint number: 3
+Name of the .cs file being reviewed: All .cs files under the Collisions file forder
+Author of the .cs file being reviewed: Xiaochen Feng
+Number of minutes taken to complete the review: 20 minutes
+Specific comments on what is readable and what is not: The collisions files are very readable because their method names clearly indicate what the collisions happen between. But I would say
+there may be lots of collisons that can be combined because sometimes I would be confused by the door, water, block, wall when I was writing my code. Also, I think it may lack some collisons
+like the collision between Enemy and Projectile.

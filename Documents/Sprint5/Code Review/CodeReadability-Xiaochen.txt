@@ -1,0 +1,13 @@
+Author of the code review: Xiaochen Feng
+Date of the code review 12/1/2019
+Sprint number: 5
+Name of the .cs file being reviewed: DungeonHUD.cs
+Author of the .cs file being reviewed: Cong Liu, Kun Peng, Weiyi Jiang
+Number of minutes taken to complete the review 5 min
+
+Specific comments on what is readable and what is not:
+
+In sprint 5, we have some little changes on the head-up display. Since we added a mode called unlimited mode, we should
+add a score part to record the achievement the player can have. The changes are pretty readable.
+
+
